@@ -5,6 +5,6 @@ services:
     build: .
     container_name: quiz-app-container
     image: brijesh35/my-quiz-app:latest
-    command: python manage.py runserver 0.0.0.0:8000
+    command: python manage.py runserver 0.0.0.0:8000 &> /dev/null &
     ports:
       - 8000:8000
